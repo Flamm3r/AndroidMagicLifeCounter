@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:rotation="180"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/player1_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/tcenterFinder1"/>
+
+        <Button
+            android:id="@+id/player1_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_below="@id/tcenterFinder1"/>
+
+        <TextView
+            android:id="@+id/tcenterFinder1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/hitpointsPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="roll the dice"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/player2_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_above="@id/tcenterFinder2" />
+
+        <Button
+            android:id="@+id/player2_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_below="@id/tcenterFinder2"/>
+
+
+        <TextView
+            android:id="@+id/tcenterFinder2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/hitpointsPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+    </RelativeLayout>
+
+</LinearLayout>
