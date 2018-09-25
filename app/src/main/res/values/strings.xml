@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MagicApp</string>
+    <string name="reset_life">reset life</string>
+    <string name="roll_the_dice">roll the dice</string>
+    <string name="choose_color">choose color</string>
+    <string name="remove_the_dice">remove the dice</string>
+    <color name="white">#e7ec9b</color>
+    <color name="black">#858585</color>
+</resources>
