@@ -4,6 +4,11 @@
     <string name="roll_the_dice">roll the dice</string>
     <string name="choose_color">choose color</string>
     <string name="remove_the_dice">remove the dice</string>
+    <string name="pick_selected_colors">pick selected colors</string>
+
     <color name="white">#e7ec9b</color>
     <color name="black">#858585</color>
+    <color name="red">#ea0808</color>
+    <color name="green">#20962d</color>
+    <color name="blue">#3b70e1</color>
 </resources>

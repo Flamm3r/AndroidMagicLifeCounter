@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,13 +34,15 @@ public class MainActivity extends AppCompatActivity {
     private Button minusButton_p1;
     private TextView hitpoints_p1;
     private int hp1 = 20;
+    private RelativeLayout layout_p1;
 
     //Player2
     private Button plusButton_p2;
     private Button minusButton_p2;
     private TextView hitpoints_p2;
     private int hp2 = 20;
-    
+    private RelativeLayout layout_p2;
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         dice_p1.setVisibility(View.INVISIBLE);
         dice_p2.setVisibility(View.INVISIBLE);
 
-
         //Roll dice Button
 
         rollDice.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(myIntent);
             }
         });
+
+
+        //Layouts
+        layout_p1 = findViewById(R.id.layout_p1);
+        layout_p2 = findViewById(R.id.layout_p2);
 
 
         //################
@@ -196,4 +203,5 @@ public class MainActivity extends AppCompatActivity {
             hitpoints.setTextColor(Color.DKGRAY);
         }
     }
+
 }
