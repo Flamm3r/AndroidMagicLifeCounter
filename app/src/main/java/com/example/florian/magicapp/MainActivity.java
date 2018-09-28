@@ -157,6 +157,15 @@ public class MainActivity extends AppCompatActivity {
         
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Intent intent = getIntent();
+        layout_p1.setBackgroundColor(intent.getIntExtra("col_p1", 0));
+        layout_p2.setBackgroundColor(intent.getIntExtra("col_p2", 0));
+    }
+
     private void rollDice() {
 
         if (diceRolled == false){
@@ -183,6 +192,9 @@ public class MainActivity extends AppCompatActivity {
             rollDice.setText(R.string.roll_the_dice);
             diceRolled = false;
         }
+
+
+
 
 
     }

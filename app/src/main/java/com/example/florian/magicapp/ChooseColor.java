@@ -145,8 +145,8 @@ public class ChooseColor extends AppCompatActivity{
 
                 Intent myIntent = new Intent(ChooseColor.this, MainActivity.class);
                 //TODO gewählte Farbe an Mainactivity übergeben
-                //myIntent.putExtra("col_p1", p1_col);
-                //myIntent.putExtra("col_p2", p2_col);
+                myIntent.putExtra("col_p1", p1_col);
+                myIntent.putExtra("col_p2", p2_col);
                 ChooseColor.this.startActivity(myIntent);
             }
         });
