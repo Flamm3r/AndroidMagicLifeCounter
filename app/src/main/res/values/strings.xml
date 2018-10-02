@@ -6,9 +6,9 @@
     <string name="remove_the_dice">remove the dice</string>
     <string name="pick_selected_colors">pick selected colors</string>
 
-    <color name="white">#e7ec9b</color>
-    <color name="black">#858585</color>
-    <color name="red">#ea0808</color>
-    <color name="green">#20962d</color>
-    <color name="blue">#3b70e1</color>
+    <color name="white">#ffda79</color>
+    <color name="black">#84817a</color>
+    <color name="red">#ff5252</color>
+    <color name="green">#218c74</color>
+    <color name="blue">#227093</color>
 </resources>
