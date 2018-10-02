@@ -128,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
         //### Player 2 ###
         //################
 
+
         plusButton_p2 = findViewById(R.id.player2_plus);
         minusButton_p2 = findViewById(R.id.player2_minus);
         hitpoints_p2 = findViewById(R.id.hitpointsPlayer2);
